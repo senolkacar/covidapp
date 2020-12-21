@@ -1,5 +1,5 @@
 # covidapp
-![Image](https://pasteboard.co/JG0WmzM.png)
+![Alt Text](https://pasteboard.co/JG0WmzM.png)
 
 Basic COVID-19 tracking app.
 
