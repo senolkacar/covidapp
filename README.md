@@ -1,6 +1,8 @@
 # covidapp
 ![Alt text](https://pasteboard.co/JG0WmzM.png)
+
 Basic COVID-19 tracking app.
+
 Statistic data retrieved from https://corona.lmao.ninja/v2/
 
 
