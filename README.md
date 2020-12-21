@@ -1,5 +1,5 @@
 # covidapp
-![Alt Text](https://pasteboard.co/JG0WmzM.png)
+![Alt Text](https://github.com/senolkacar/covidapp/blob/master/screenshot.png)
 
 Basic COVID-19 tracking app.
 
