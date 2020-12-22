@@ -3,6 +3,7 @@ import 'constants.dart';
 import 'containerstyle.dart';
 import 'countriesdata.dart';
 import 'dart:core';
+import 'richtextstyle.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -83,41 +84,37 @@ class _MainScreenState extends State<MainScreen> {
                 children: [
                   Expanded(
                     child: containerStyle(richTextChild:
-                    RichText(
-                      textAlign: TextAlign.center,
-                      text: TextSpan(
-                          style: kTextStyle,
-                          children: [
-                            TextSpan(text: 'CASES:\n'),
-                            TextSpan(text: '${_country.todayCases}',style: TextStyle(height: 3.0)),
-                          ]
-                      ),
+                    RichTextStyle(
+                    title: TextSpan(
+                    text: 'CASES:\n ',
+                    ),
+                    number: TextSpan(
+                      text: '${_country.todayCases}',style: TextStyle(height: 3.0),
                     ),
                     ),
-                  ),
+                    ),
+                    ),
                   Expanded(
                     child: containerStyle(
-                      richTextChild: RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                            style: kTextStyle,
-                            children: [
-                              TextSpan(text: 'DEATH:\n'),
-                              TextSpan(text: '${_country.todayDeaths}',style: TextStyle(height: 3.0,color: Colors.red)),
-                            ]
+                      richTextChild:
+                      RichTextStyle(
+                        title: TextSpan(
+                          text: 'DEATHS:\n ',
+                        ),
+                        number: TextSpan(
+                          text: '${_country.todayDeaths}',style: TextStyle(height: 3.0,color: Colors.red),
                         ),
                       ),),
                   ),
                   Expanded(
                     child:containerStyle(
-                      richTextChild: RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                            style: kTextStyle,
-                            children: [
-                              TextSpan(text: 'RECOVERED:\n'),
-                              TextSpan(text: '${_country.todayRecovered}',style: TextStyle(height: 3.0,color: Colors.green.shade800)),
-                            ]
+                      richTextChild:
+                      RichTextStyle(
+                        title: TextSpan(
+                          text: 'RECOVERED:\n ',
+                        ),
+                        number: TextSpan(
+                          text: '${_country.todayRecovered}',style: TextStyle(height: 3.0,color: Colors.green.shade800),
                         ),
                       ),),
                   ),
@@ -129,28 +126,26 @@ class _MainScreenState extends State<MainScreen> {
                 children: [
                   Expanded(
                     child: containerStyle(
-                      richTextChild: RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                            style: kTextStyle,
-                            children: [
-                              TextSpan(text: 'CASES:\n'),
-                              TextSpan(text: '${_country.tests}',style: TextStyle(height: 3.0)),
-                            ]
+                      richTextChild:
+                      RichTextStyle(
+                        title: TextSpan(
+                          text: 'CASES:\n ',
+                        ),
+                        number: TextSpan(
+                          text: '${_country.tests}',style: TextStyle(height: 3.0),
                         ),
                       ),
                     ),
                   ),
                   Expanded(
                     child: containerStyle(
-                      richTextChild: RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                            style: kTextStyle,
-                            children: [
-                              TextSpan(text: 'CASES:\n'),
-                              TextSpan(text: '${_country.cases}',style: TextStyle(height: 3.0)),
-                            ]
+                      richTextChild:
+                      RichTextStyle(
+                        title: TextSpan(
+                          text: 'CASES:\n ',
+                        ),
+                        number: TextSpan(
+                          text: '${_country.cases}',style: TextStyle(height: 3.0),
                         ),
                       ),
                     ),
@@ -161,28 +156,26 @@ class _MainScreenState extends State<MainScreen> {
                 children: [
                   Expanded(
                     child: containerStyle(
-                      richTextChild: RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                            style: kTextStyle,
-                            children: [
-                              TextSpan(text: 'DEATHS:\n'),
-                              TextSpan(text: '${_country.deaths}',style: TextStyle(height: 3.0,color: Colors.red)),
-                            ]
+                      richTextChild:
+                      RichTextStyle(
+                        title: TextSpan(
+                          text: 'CASES:\n ',
+                        ),
+                        number: TextSpan(
+                          text: '${_country.deaths}',style: TextStyle(height: 3.0,color: Colors.red),
                         ),
                       ),
                     ),
                   ),
                   Expanded(
                     child: containerStyle(
-                      richTextChild: RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                            style: kTextStyle,
-                            children: [
-                              TextSpan(text: 'RECOVERED:\n'),
-                              TextSpan(text: '${_country.recovered}',style: TextStyle(height: 3.0,color: Colors.green.shade800)),
-                            ]
+                      richTextChild:
+                      RichTextStyle(
+                        title: TextSpan(
+                          text: 'CASES:\n ',
+                        ),
+                        number: TextSpan(
+                          text: '${_country.recovered}',style: TextStyle(height: 3.0,color: Colors.green.shade800),
                         ),
                       ),
                     ),
